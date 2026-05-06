@@ -240,7 +240,6 @@ function Start-ThemeSwitch {
 # MAIN EXECUTION
 # -----------------------------------------------------------------------------
 
-# Determine target theme
 $TargetTheme = $Theme
 
 if ($Theme -eq "toggle") {
@@ -248,5 +247,4 @@ if ($Theme -eq "toggle") {
     $TargetTheme = if ($current -eq "gruvbox") { "dark" } else { "gruvbox" }
 }
 
-# Execute
 Start-ThemeSwitch -Target $TargetTheme
